@@ -8,4 +8,4 @@ from django.http import HttpResponse
 #在这儿编写视图
 
 def home_page(request):
-    return HttpResponse('<html><title>To-Do lists</title></html>')
+    return render(request, 'home.html')
